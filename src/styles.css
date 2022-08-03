@@ -63,6 +63,7 @@ ul li{
 .search{
     width: 70%;
     margin-left: 5vh;
+    top: 2vh;
 }
 .submit{
     width: 20%;
