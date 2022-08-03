@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"\
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Sultan</title>
+</head>
+<body>
+    <div class="contain">
+        <header class="d-none d-md-block">
+            <span class="company_name" title="Your trusted electronic plug">
+                <p><em>Sultan</em></p>
+            </span>  
+            <div class="navigation">
+                <ul class="left">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>Contacts</li>
+                    <li>CATEGORIES</li>
+                    <li>Help</li>
+                </ul>
+                <ul class="right">
+                    <li>Login</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+           
+        </header>
+        <div class="content">
+            <section class="search-bar">
+                <input type="search" class="search">
+                <input type="submit" class="submit">
+            </section>
+            <section class="slideshow d-none d-md-block">
+                    <div class="item">
+                        <img class="image-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/823/original/angledmonitor.PNG?1649959886" alt="">
+                        <p class="details"></p>
+                    </div>
+                    <div class="item">
+                        <img class="image-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/828/original/hp_spectre.PNG?1649960084" alt="">
+                        <p class="details"></p>
+                    </div>
+                    <div class="item">
+                        <img class="image-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/841/original/newMacbook.PNG?1649961376" alt="">
+                        <p class="details"></p>
+                    </div>
+                    <div class="item">
+                        <img class="image-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/842/original/omen.PNG?1649961390" alt="">
+                        <p class="details"></p>
+                    </div>
+                    <div class="item">
+                        <img class="image-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/843/original/pavilion.PNG?1649961407" alt="">
+                        <p class="details"></p>
+                    </div>
+                    <div class="item">
+                        <img class="image-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/845/original/thinkpad.PNG?1649961436" alt="">
+                        <p class="details"></p>
+                    </div>
+                    <a class="prev" onclick="nextImage(-1)">&#10094;</a>
+                    <a class="next" onclick="nextImage(1)">&#10095;</a>
+                    <div class="indicator d-none d-md-block" style="text-align:center;">
+                        <span class="dot" onclick="currentImage(1)"></span>
+                        <span class="dot" onclick="currentImage(2)"></span>
+                        <span class="dot" onclick="currentImage(3)"></span>
+                        <span class="dot" onclick="currentImage(4)"></span>
+                        <span class="dot" onclick="currentImage(5)"></span>
+                        <span class="dot" onclick="currentImage(6)"></span>
+                    </div>
+            </section>
+            <section class="section-one">
+                <div class="section-one-content">
+                    <img class="img-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="Hp Vostron">
+                    <p class="item-name">Hp Vostron</p>
+                    <span>
+                        <p class="item-price left">$</p>
+                        <a class="addToCart right btn btn-success" href="">ADD TO CART</a>
+                    </span>        
+                </div>
+                <div class="section-one-content">
+                    <img class="img-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/838/original/macbookPro.PNG?1649961328" alt="Macbook Pro">
+                    <p class="item-name">Macbook Pro</p>
+                    <span>
+                        <p class="item-price left">$</p>
+                        <a class="addToCart right btn btn-success" href="">ADD TO CART</a>
+                    </span>
+                </div>
+                <div class="section-one-content">
+                    <img class="img-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="Hp pavilion">
+                    <p class="item-name">Hp Pavilion</p>
+                    <span>
+                        <p class="item-price left">$</p>
+                        <a class="addToCart right btn btn-success" href="">ADD TO CART</a>
+                    </span>
+                </div>
+                <div class="section-one-content">
+                    <img class="img-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/837/original/macbookAir.PNG?1649961311" alt="Macbook Air">
+                    <p class="item-name">Name</p>
+                    <span>
+                        <p class="item-price left">$</p>
+                        <a class="addToCart right btn btn-success" href="">ADD TO CART</a>
+                    </span>
+                </div>
+                <div class="section-one-content">
+                    <img class="img-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/836/original/macbook.PNG?1649961258" alt="Macbook">
+                    <p name="item-name">Macbook</p>
+                    <span>
+                        <p class="item-price left">$</p>
+                        <a class="addToCart right btn btn-success" href="">ADD TO CART</a>
+                    </span>
+                </div>
+            </section>
+            <h2>New Releases</h2>
+            <section class="section-two">
+                <div class="one">
+                    <div class="first-container">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/834/original/inspiron.PNG?1649961144" alt="">
+                    </div>
+                    <div class="second-container">
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="one">
+                    <div class="first-container">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/831/original/hp.PNG?1649961109" alt="">
+                    </div>
+                    <div class="second-container">
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="one">
+                    <div class="first-container">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/832/original/ideapad.PNG?1649961126" alt="">
+                    </div>
+                    <div class="second-container">
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="one">
+                    <div class="first-container">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/824/original/chromebook.PNG?1649959916" alt="">
+                    </div>
+                    <div class="second-container">
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                        <div class="div">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/835/original/latitude.PNG?1649961218" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <h2>Monitors and TVs</h2>
+            <section class="section-three">
+                <div class="one">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/823/original/angledmonitor.PNG?1649959886" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112000.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112140.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112251.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112354.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112421.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112106.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112421.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112106.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112421.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112106.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112421.jpg" alt="">
+                </div>
+            </section>
+            <h2>Fitness</h2>
+            <section class="section-four">
+                <div class="item-one">
+                    <img src="./src/img/IMG_20220729_111119.jpg" alt="">
+                </div>
+                <div class="item-two">
+                    <img src="./src/img/IMG_20220729_111138.jpg" alt="">
+                    
+                </div>
+                <div class="item-three">
+                    <img src="./src/img/IMG_20220729_111200.jpg" alt="">
+                    <img src="./src/img/IMG_20220729_111200.jpg" alt="">
+                    <img src="./src/img/IMG_20220729_111200.jpg" alt="">
+                </div>
+                <div class="item-four">
+                    <img src="./src/img/IMG_20220729_111247.jpg" alt="">
+                </div>
+                <div class="item-five">
+                    <img src="./src/img/IMG_20220729_111200.jpg" alt="">
+                    <img src="./src/img/IMG_20220729_111200.jpg" alt="">
+                    <img src="./src/img/IMG_20220729_111200.jpg" alt="">
+                </div>
+                
+            </section>
+            <h2>Health</h2>
+            <section class="section-five">
+                <img src="./src/img/IMG_20220729_135226.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135434.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135513.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135545.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135707.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135846.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135944.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135226.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135434.jpg" alt="">
+                <img src="./src/img/IMG_20220729_135513.jpg" alt="">
+            </section>
+            <h2 class="featured-center">Featured Device</h2>
+            <section class="section-seven">
+                <div class="one">
+                    <img src="./src/img/IMG_20220729_112106.jpg" alt="">
+                    
+                </div>
+            </section>
+        </div>
+
+    </div>
+   
+    <div class="footer">
+        <p class="d-none d-md-block">cc</p>
+        <ul class="bottom-navigation">
+            <li>
+                <i class="fas fa-home"></i>
+            </li>
+            <li>
+                <i class="fas fa-layer-group"></i>
+            </li>
+            <li>
+                <i class="fas fa-user-plus"></i>
+            </li>
+            <li>
+                <i class="fas fa-cart-plus"></i>
+            </li>
+        </ul>
+        
+    </div>
+    
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="jquery-1.4.2.min.js"><\/script>')</script>
+    <script src="./src/index.js"></script>
+    
+</body>
+</html>
